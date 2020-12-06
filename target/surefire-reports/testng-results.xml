@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-29T16:57:33 CST" name="Command line suite" finished-at="2020-11-29T16:58:00 CST" duration-ms="27973">
+    <groups>
+    </groups>
+    <test started-at="2020-11-29T16:57:33 CST" name="Command line test" finished-at="2020-11-29T16:58:00 CST" duration-ms="27973">
+      <class name="android.cell.MobileTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:android.cell.MobileTest@365185bd]" started-at="2020-11-29T16:57:33 CST" name="setup" finished-at="2020-11-29T16:57:58 CST" duration-ms="25884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.cnn.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="androidMobile()[pri:0, instance:android.cell.MobileTest@365185bd]" started-at="2020-11-29T16:57:58 CST" name="androidMobile" finished-at="2020-11-29T16:57:58 CST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- androidMobile -->
+        <test-method signature="androidTablet()[pri:0, instance:android.cell.MobileTest@365185bd]" started-at="2020-11-29T16:57:58 CST" name="androidTablet" finished-at="2020-11-29T16:57:59 CST" duration-ms="391" status="FAIL">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more]> but was:<[CNN - Breaking News, Latest News and Videos]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more]> but was:<[CNN - Breaking News, Latest News and Videos]>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at org.junit.Assert.assertEquals(Assert.java:144)
+at android.cell.MobileTest.androidTablet(MobileTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- androidTablet -->
+        <test-method signature="tearDown()[pri:0, instance:android.cell.MobileTest@365185bd]" started-at="2020-11-29T16:57:59 CST" name="tearDown" finished-at="2020-11-29T16:58:00 CST" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- android.cell.MobileTest -->
+      <class name="android.cell.WebAppTest">
+        <test-method signature="webAppOne()[pri:0, instance:android.cell.WebAppTest@18bf3d14]" started-at="2020-11-29T16:58:00 CST" name="webAppOne" finished-at="2020-11-29T16:58:00 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webAppOne -->
+        <test-method signature="webAppTwo()[pri:0, instance:android.cell.WebAppTest@18bf3d14]" started-at="2020-11-29T16:58:00 CST" name="webAppTwo" finished-at="2020-11-29T16:58:00 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webAppTwo -->
+      </class> <!-- android.cell.WebAppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
